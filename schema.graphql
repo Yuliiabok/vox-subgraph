@@ -1,0 +1,42 @@
+type VClaim @entity {
+  id: ID!
+  hash: Bytes!
+  amount: BigDecimal!
+}
+
+type VClaimAndStake @entity{
+  id: ID!
+  hash: Bytes!
+  user_address: Bytes!
+  amount: BigDecimal!
+}
+
+type VDeposit @entity{
+  id: ID!
+  user_address: Bytes!
+  amount: BigInt
+}
+
+type WithdrawEmergency @entity{
+  id: ID!
+  user_address: Bytes!
+  amount: BigInt
+}
+
+type Ownership @entity{
+  id: ID!
+  previous_owner: Bytes!
+  new_owner: Bytes!
+}
+
+type VRecovered @entity{
+  id: ID!
+  token: Bytes!
+  amount: BigInt
+}
+
+type VWithdraw @entity{
+  id: ID!
+  user_address: Bytes!
+  amount: BigInt
+}
