@@ -1,2 +1,2 @@
-# Vox-finance
+# Vox-finance Subgraph
  
